@@ -23,10 +23,10 @@ $city=$record->city->name; // 'Minneapolis'
 //$region="10";
 
 ########## MySql details (Replace with yours) #############
-$db_username = "greenpeace"; //Database Username
-$db_password = "warroom138"; //Database Password
+$db_username = "dbuser"; //Database Username
+$db_password = "dbpassword"; //Database Password
 $hostname = "127.0.0.1"; //Mysql Hostname
-$db_name = 'greenpeace'; //Database Name
+$db_name = 'dbname'; //Database Name
 ###################################################################
 try {
 $conn = new PDO("mysql:host=$hostname; dbname=$db_name", $db_username, $db_password);
