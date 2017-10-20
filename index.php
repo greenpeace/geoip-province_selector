@@ -19,10 +19,10 @@ $city=$record->city->name; // 'Minneapolis'
 
 
 ########## MySql details (Replace with yours) #############
-$db_username = "greenpeace"; //Database Username
-$db_password = "warroom138"; //Database Password
+$db_username = "dbuser"; //Database Username
+$db_password = "dbpassword"; //Database Password
 $hostname = "127.0.0.1"; //Mysql Hostname
-$db_name = 'greenpeace'; //Database Name
+$db_name = 'dbname'; //Database Name
 ###################################################################
 
 try {
@@ -51,10 +51,6 @@ if ($result !== false) {
 
 
 $cb=$_REQUEST['callback'];
-//echo "$cb({\"list\":'$op'})";
+
 echo "$cb({\"list\":\"$op\"})";
 
-/*
-$cb=$_REQUEST['callback'];
-echo "$cb({\"country\":\"$country\",\"region\":\"$region\",\"city\":\"$city\"})";
-*/
